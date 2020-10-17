@@ -4,7 +4,7 @@ import { Startup } from "../../startup/models/Startup";
 import { Account } from "../../account/models/Account";
 
 
-@Table({ timestamps: true, tableName: 'User' })
+@Table({ timestamps: true, tableName: 'Transaction' })
 export class Transaction extends Model<Transaction> {
 
     @PrimaryKey

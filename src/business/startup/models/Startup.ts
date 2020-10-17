@@ -4,7 +4,7 @@ import { Person } from "../../person/models/Person";
 
 
 
-@Table({ timestamps: true, tableName: 'User' })
+@Table({ timestamps: true, tableName: 'Startup' })
 export class Startup extends Model<Startup> {
 
     @PrimaryKey
