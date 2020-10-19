@@ -6,7 +6,7 @@ import { PersonRepository } from '../repositories/PersonRepository';
 
 
 @injectable()
-export class AccountService {
+export class PersonService {
 
     @inject(TYPES.PersonRepository)
     private readonly personRepository: PersonRepository;
