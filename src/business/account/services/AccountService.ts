@@ -17,7 +17,7 @@ export class AccountService {
         return getResultOrError(response);
     }
 
-    public async update(id: number, account: Account): Promise<ApiReturn> {
+    public async update(id: any, account: Account): Promise<ApiReturn> {
         var error = Account.validate(account);
 
         if (error)

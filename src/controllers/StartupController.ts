@@ -14,7 +14,7 @@ export class StartupController {
     public register(app: Application): void {
         app.route('/startup/:id')
             .put((req: Request, res: Response) => {
-                this.startupService.update(req.params.id, req.body as Account)
+                this.startupService.update(req.params.id, req.body as Startup)
                     .then(ret => res.send(ret))
                     .catch(err => res.send(err).status(401));
             });

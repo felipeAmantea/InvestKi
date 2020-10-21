@@ -17,7 +17,7 @@ export class UserService {
         return getResultOrError(response);
     }
 
-    public async update(id: number, user: User): Promise<ApiReturn> {
+    public async update(id: any, user: User): Promise<ApiReturn> {
         var error = User.validate(user);
 
         if (error)

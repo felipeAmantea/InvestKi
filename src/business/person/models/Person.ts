@@ -11,7 +11,7 @@ export class Person extends Model<Person> {
     @Column
     id: number;
 
-    @Column(DataType.NUMBER())
+    @Column
     cpf: string;
 
     @Column(DataType.STRING(30))

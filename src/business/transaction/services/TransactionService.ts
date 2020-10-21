@@ -14,7 +14,7 @@ export class TransactionService {
         return getResultOrError(response);
     }
 
-    public async update(id: number, transaction: Transaction): Promise<ApiReturn> {
+    public async update(id: any, transaction: Transaction): Promise<ApiReturn> {
         var error = Transaction.validate(transaction);
 
         if (error)

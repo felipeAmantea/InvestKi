@@ -11,13 +11,13 @@ export class Account extends Model<Account> {
     @Column
     id: number;
 
-    @Column(DataType.NUMBER())
+    @Column
     agency: number;
 
-    @Column(DataType.NUMBER())
+    @Column
     account: number;
 
-    @Column(DataType.NUMBER())
+    @Column
     digit: number;
        
 

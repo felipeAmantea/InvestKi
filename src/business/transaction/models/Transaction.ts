@@ -12,7 +12,7 @@ export class Transaction extends Model<Transaction> {
     @Column
     id: number;
 
-    @Column(DataType.NUMBER())
+    @Column
     totalTransaction: number;
 
     // @ForeignKey(() => Person)

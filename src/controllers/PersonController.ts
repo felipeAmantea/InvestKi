@@ -14,7 +14,7 @@ export class PersonController {
     public register(app: Application): void {
         app.route('/person/:id')
             .put((req: Request, res: Response) => {
-                this.personService.update(req.params.id, req.body as Account)
+                this.personService.update(req.params.id, req.body as Person)
                     .then(ret => res.send(ret))
                     .catch(err => res.send(err).status(401));
             });

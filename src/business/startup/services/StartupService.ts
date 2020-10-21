@@ -15,7 +15,7 @@ export class StartupService {
         return getResultOrError(response);
     }
 
-    public async update(id: number, startup: Startup): Promise<ApiReturn> {
+    public async update(id: any, startup: Startup): Promise<ApiReturn> {
         var error = Startup.validate(startup);
 
         if (error)

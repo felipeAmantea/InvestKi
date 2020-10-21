@@ -12,8 +12,8 @@ export class Startup extends Model<Startup> {
     @Column
     id: number;
 
-    @Column(DataType.NUMBER())
-    cnpj: number;
+    @Column
+    cnpj: string;
 
     @Column(DataType.STRING(30))
     fantasyName: string;
@@ -27,7 +27,7 @@ export class Startup extends Model<Startup> {
     @Column(DataType.STRING(30))
     zipcode: string;
 
-    @Column(DataType.NUMBER())
+    @Column
     valuationAtual: number;
 
     @Column(DataType.STRING(30))

@@ -14,7 +14,7 @@ export class TransactionController {
     public register(app: Application): void {
         app.route('/transaction/:id')
             .put((req: Request, res: Response) => {
-                this.transactionService.update(req.params.id, req.body as Account)
+                this.transactionService.update(req.params.id, req.body as Transaction)
                     .then(ret => res.send(ret))
                     .catch(err => res.send(err).status(401));
             });

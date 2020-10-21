@@ -1,0 +1,54 @@
+Campos default:
+
+createAt,
+updateAt,
+Active
+
+
+- Usuario -> Accesso ao sistema
+
+Id,
+Login,
+Password
+
+
+- Pessoa
+
+Id (PK),
+Cpf (Indexed, Unique),
+Name,
+Country,
+Usuario (user_id)
+
+
+- Conta -> Cobrancas, Investimentos
+
+Id, (PK)
+Agency, (Indexed, unique)
+Account,
+Digit,
+Pessoa (pessoa_id)
+
+
+Transaction
+
+Id (PK),
+Pessoa (pessoa_id) (FK),
+Startup (startup_id) (FK),
+Conta (account_id) (FK)
+totalTranscation
+
+
+Startup
+
+Id (PK),
+CNPJ, (Indexed, Unique)
+FantasyName,
+CorporateName,
+Country,
+Uf,
+Valuation atual, 
+Pessoa (pessoa_id),
+Description,
+Cover,
+Segmento
