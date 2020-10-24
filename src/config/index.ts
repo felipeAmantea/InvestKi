@@ -26,9 +26,12 @@ sequelize.addModels([Transaction])
 sequelize.addModels([User])
 
 
-Person.belongsTo(Account)
+Account.belongsTo(Person)
 Person.belongsTo(User)
-Person.belongsTo(Startup)
-Person.hasMany(Transaction)
+Startup.belongsTo(Person)
+Transaction.belongsTo(Startup)
+Transaction.belongsTo(Account)
+
+
 Startup.hasMany(Transaction)
-Account.hasMany(Transaction)
+Person.hasMany(Account)

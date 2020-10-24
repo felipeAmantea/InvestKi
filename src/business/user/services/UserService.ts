@@ -44,6 +44,8 @@ export class UserService {
 
     public async save(user: User): Promise<ApiReturn> {
         var error = User.validate(user);
+        console.log(user);
+        
 
         if (error)
             throw getResultOrError(undefined, error);

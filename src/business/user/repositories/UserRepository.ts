@@ -17,6 +17,6 @@ export class UserRepository {
     }
 
     public async save(user: User): Promise<User> {
-        return await User.create(User);
+        return await User.create(user);
     }
 }

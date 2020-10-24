@@ -20,14 +20,14 @@ export class User extends Model<User> {
 
     // @ForeignKey(() => Person)
     // @Column
-    PersonId: number;
+    
 
     static validate(user: User): string {
         if (user.login == null)
             return " login inválido."
 
-        if (user.PersonId == null)
-            return 'Pessoa inválida';
+        // if (user.PersonId == null)
+        //     return 'Pessoa inválida';
 
         return null;
     }
