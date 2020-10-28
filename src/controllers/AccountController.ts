@@ -33,7 +33,7 @@ export class AccountController {
                     .catch(err => res.send(err).status(401));
             });
 
-        app.route('/accounts')
+        app.route('/account')
             .post((req: Request, res: Response) => {
                 this.accountService.save(req.body as Account)
                     .then(ret => res.send(ret))

@@ -17,6 +17,6 @@ export class PersonRepository {
     }
 
     public async save(person: Person): Promise<Person> {
-        return await Person.create(Person);
+        return await Person.create(person);
     }
 }

@@ -18,6 +18,6 @@ export class TransactionRepository {
     }
 
     public async save(transaction: Transaction): Promise<Transaction> {
-        return await Transaction.create(Transaction);
+        return await Transaction.create(transaction);
     }
 }

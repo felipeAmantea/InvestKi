@@ -18,6 +18,6 @@ export class AccountRepository {
     }
 
     public async save(account: Account): Promise<Account> {
-        return await Account.create(Account);
+        return await Account.create(account);
     }
 }
